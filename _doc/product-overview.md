@@ -1,0 +1,1 @@
+Build me an app for pharmacy owners to help them manage drug inventory, expiry dates, and prescription records with the goal to prevent expired stock and ensure prescription accuracy
