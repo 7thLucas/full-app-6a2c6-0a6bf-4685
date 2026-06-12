@@ -1,0 +1,106 @@
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="flex flex-col h-full p-12">
+
+    <!-- Header -->
+    <div class="mb-6">
+      <div class="text-xs font-bold uppercase tracking-widest mb-1" style="color:#0d6e6e;">North Star Metric</div>
+      <h2 class="text-2xl font-bold" style="color:#1e3a5f;">Weekly Verified Operations</h2>
+      <p class="text-sm mt-1" style="color:#64748b;">The single number this app lives or dies by: real pharmacy operations completed and logged each week.</p>
+    </div>
+
+    <!-- Projected impact label -->
+    <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-semibold mb-6 self-start" style="background:#fef9c3; color:#854d0e; border:1px solid #fde047;">
+      Projected impact — based on your inputs
+    </div>
+
+    <div class="flex gap-5 flex-1">
+
+      <!-- Left: Operations + Formula -->
+      <div class="flex flex-col gap-4" style="width:55%;">
+
+        <!-- Operations identified -->
+        <div class="rounded-2xl p-5" style="background:#f8fafc; border:1px solid #e2e8f0;">
+          <div class="text-xs font-bold uppercase tracking-widest mb-3" style="color:#1e3a5f;">Verified Operations (what gets counted)</div>
+          <div class="flex flex-col gap-2">
+            <div class="flex items-start gap-3">
+              <div class="w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold shrink-0 mt-0.5" style="background:#1e3a5f; color:#fff;">1</div>
+              <div>
+                <div class="font-semibold text-sm" style="color:#1e3a5f;">Prescription dispensed</div>
+                <div class="text-xs" style="color:#64748b;">A prescription logged, validated against live inventory, and marked as filled by a staff member.</div>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <div class="w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold shrink-0 mt-0.5" style="background:#0d6e6e; color:#fff;">2</div>
+              <div>
+                <div class="font-semibold text-sm" style="color:#1e3a5f;">Expiry batch actioned</div>
+                <div class="text-xs" style="color:#64748b;">A near-expiry or expired batch flagged by the system and marked removed, returned, or noted by the owner.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- WVO Formula -->
+        <div class="rounded-2xl p-5" style="background:#f0fdf4; border:1px solid #bbf7d0;">
+          <div class="text-xs font-bold uppercase tracking-widest mb-4" style="color:#15803d;">WVO Projection — arithmetic shown</div>
+
+          <!-- Step 1 -->
+          <div class="flex items-center gap-2 mb-2 flex-wrap">
+            <span class="px-2.5 py-1 rounded-lg text-xs font-semibold" style="background:#fef9c3; color:#854d0e; border:1px solid #fde047;">Assumption — adjust this</span>
+            <span class="text-sm font-medium" style="color:#374151;">50 prescriptions/day</span>
+            <span class="text-xs" style="color:#94a3b8;">× 6 days/week</span>
+            <span class="text-sm font-bold" style="color:#15803d;">= 300 scripts/week</span>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="flex items-center gap-2 mb-2 flex-wrap">
+            <span class="px-2.5 py-1 rounded-lg text-xs font-semibold" style="background:#fef9c3; color:#854d0e; border:1px solid #fde047;">Assumption — adjust this</span>
+            <span class="text-sm font-medium" style="color:#374151;">~10 expiry batches actioned/week</span>
+          </div>
+
+          <!-- Divider -->
+          <div style="border-top:1px dashed #86efac; margin:10px 0;"></div>
+
+          <!-- Total WVO -->
+          <div class="flex items-center gap-3">
+            <div class="text-3xl font-extrabold" style="color:#1e3a5f;">~310</div>
+            <div>
+              <div class="text-sm font-semibold" style="color:#1e3a5f;">verified operations / week</div>
+              <div class="text-xs" style="color:#64748b;">300 prescriptions + 10 expiry batches</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Value & ROI -->
+      <div class="flex flex-col gap-4" style="width:45%;">
+
+        <!-- Time value calculation -->
+        <div class="rounded-2xl p-5" style="background:#f8fafc; border:1px solid #e2e8f0;">
+          <div class="text-xs font-bold uppercase tracking-widest mb-3" style="color:#0d6e6e;">Time Value Derivation</div>
+          <div class="text-xs leading-relaxed mb-3" style="color:#475569;">
+            <span class="px-1.5 py-0.5 rounded text-xs font-semibold" style="background:#fef9c3; color:#854d0e;">Assumption</span>
+            <span class="ml-1">3 min saved per prescription vs manual</span>
+          </div>
+          <div class="text-xs mb-1" style="color:#64748b;">300 scripts × 3 min = <strong style="color:#1e3a5f;">900 min = 15 hrs/week</strong></div>
+          <div class="text-xs mb-3" style="color:#64748b;">
+            <span class="px-1.5 py-0.5 rounded text-xs font-semibold" style="background:#fef9c3; color:#854d0e;">Assumption</span>
+            <span class="ml-1">Staff rate: $15/hr</span>
+          </div>
+          <div class="text-xs" style="color:#64748b;">15 hrs × $15 = <strong style="color:#1e3a5f;">$225/week</strong></div>
+        </div>
+
+        <!-- Annual value prominent -->
+        <div class="rounded-2xl p-5 flex flex-col gap-1" style="background:#1e3a5f; color:#fff;">
+          <div class="text-xs font-bold uppercase tracking-widest mb-1" style="color:rgba(255,255,255,0.55);">Projected Annual Value</div>
+          <div class="text-4xl font-extrabold">$11,700</div>
+          <div class="text-sm" style="color:rgba(255,255,255,0.7);">per year in staff time recovered</div>
+          <div style="border-top:1px solid rgba(255,255,255,0.15); margin:8px 0;"></div>
+          <div class="text-xs" style="color:rgba(255,255,255,0.6);">$225/week × 52 weeks = $11,700/yr</div>
+          <div class="text-xs mt-1" style="color:rgba(255,255,255,0.5);">Compliance risk avoided and dispensing error prevention represent additional, harder-to-quantify value.</div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
